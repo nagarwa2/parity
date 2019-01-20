@@ -41,10 +41,12 @@
             <property name="allowByTailComment" value="true"/>
             <property name="allowNonPrintableEscapes" value="true"/>
         </module>
+	<!--
         <module name="LineLength">
             <property name="max" value="100"/>
             <property name="ignorePattern" value="^package.*|^import.*|a href|href|http://|https://|ftp://"/>
         </module>
+	-->
 	<!--
         <module name="AvoidStarImport"/>
 	-->
@@ -62,14 +64,14 @@
         <module name="RightCurly">
             <property name="id" value="RightCurlySame"/>
             <property name="tokens"
-             value="LITERAL_TRY, LITERAL_CATCH, LITERAL_FINALLY, LITERAL_IF, LITERAL_ELSE,
+             value="LITERAL_TRY, LITERAL_CATCH, LITERAL_FINALLY,
                     LITERAL_DO"/>
         </module>
         <module name="RightCurly">
             <property name="id" value="RightCurlyAlone"/>
             <property name="option" value="alone"/>
             <property name="tokens"
-             value="CLASS_DEF, METHOD_DEF, CTOR_DEF, LITERAL_FOR, LITERAL_WHILE, STATIC_INIT,
+             value="CLASS_DEF, METHOD_DEF, CTOR_DEF, LITERAL_FOR, LITERAL_IF, LITERAL_ELSE, LITERAL_WHILE, STATIC_INIT,
                     INSTANCE_INIT"/>
         </module>
         <module name="WhitespaceAround">
@@ -178,7 +180,7 @@
         <module name="Indentation">
             <property name="basicOffset" value="4"/>
             <property name="braceAdjustment" value="0"/>
-            <property name="caseIndent" value="2"/>
+            <property name="caseIndent" value="0"/>
             <property name="throwsIndent" value="4"/>
             <property name="lineWrappingIndentation" value="4"/>
             <property name="arrayInitIndent" value="4"/>
